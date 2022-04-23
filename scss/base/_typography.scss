@@ -1,0 +1,61 @@
+.intro {
+  color: $white;
+
+  &__heading-primary {
+    &--main {
+      font-size: 8vw;
+      font-weight: 600;
+    }
+
+    &--sub {
+      font-size: $default-font-size;
+      font-weight: 300;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 7vw;
+  color: $blue--dark;
+}
+
+.box { 
+  &__text {
+    font-size: $default-font-size;
+    line-height: 1.6em;
+
+    &--gray {
+      color: $grayish-blue--dark;
+    }
+
+    &--white {
+      color: $white
+    }
+  }
+
+  &__heading-tertiary {
+    &--light {
+      font-size: 2.9rem;
+      color: $white;
+    }
+    &--dark {
+      font-size: 2.2rem;
+      color: $blue--dark;
+    }
+  }
+}
+
+.footer {
+  font-family: 'Ubuntu', sans-serif;
+
+  &__links-name {
+    color: $white;
+    font-size: $default-font-size;
+    font-weight: 400;
+  }
+  &__link {
+    color: $grayish-blue;
+    font-size: $default-font-size;
+    font-weight: 400;
+  }
+}

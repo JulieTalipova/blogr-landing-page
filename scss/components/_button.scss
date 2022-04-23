@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  &-text {
+    // color: transparent;
+    // color: white;
+    // mix-blend-mode: difference;
+    // opacity: 0;
+  }
+  // z-index: 3;
+  &-round {
+    font-size: 1.5rem;
+    border: 1.5px solid white;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    width: 13rem;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+
+    &--white {
+      background-color: white;
+    }
+
+    &--transparent {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+}
