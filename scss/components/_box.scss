@@ -2,37 +2,80 @@
 
   flex-direction: column;
   align-items: center;
+
+  @include respond(tab-land) {
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  &-light {
+    &--1 {
+      @include respond(tab-land) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
   &-dark {
     padding-bottom: 25%;
+
+    @include respond(tab-port) {
+      padding-bottom: 15%;
+    }
+
+    @include respond(tab-land) {
+      padding-bottom: 5%;
+      justify-content: center;
+    }
   
     position: relative;
+
+    &__img-wrapper {
+      max-width: 350px;
+      margin-right: 10%;
+
+      @include respond(tab-land) {
+        transform: scale(1.3);
+      }
+    }
 
   &__bg {
     height: 75%;
     width: 100%;
-    // background-color: $blue--desaturated--dark;
     background-color: $gray-blue--dark;
     border-bottom-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     overflow: hidden;
-    // transform: skewX(3deg);
 
     position: absolute;
     top: 25%;
     z-index: -2;
+
+    @include respond(tab-land) {
+      top: 0;
+    }
+
+    
   }
 
   &__img-circles {
-    // width: 100%;
     transform: scale(1.5);
     position: absolute;
     top: -20%;
 
-    // position: absolute;
-    // top: -20%; 
-    // transform: translateY(150%);
-    // transform: scale(1.5);
     z-index: -1;
+
+
+    @include respond(tab-port) {
+      transform: scale(1.1);
+      top: -70%;
+    }
+
+    @include respond(tab-land) {
+      transform: none;
+      left: -30%;
+      top: -180%;
+    }
   }
   }
 
@@ -41,25 +84,53 @@
     text-align: center;
 
     order: 2;
+
+    @include respond(tab-land) {
+      width: 40%;
+
+      text-align: left;
+    }
   }
 
   &__heading-tertiary-wrapper {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+
+    @include respond(tab-land) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__img-wrapper {
     position: relative;
 
     order: 1;
-  }
 
-  // &__img-circles {
-  //   transform: translateY(50%);
-  // }
+    @include respond(tab-land) {
+      width: 40%;
+      overflow-x: hidden;
+    }
+
+    &--1 {
+      @include respond(tab-land) {
+        transform: scale(1.3) translateX(15%);
+      }
+    }
+    &--2 {
+      @include respond(tab-land) {
+        transform: scale(1.3) translateX(-17%);
+      }
+    }
+  }
+  
 
   &__text:not(:last-child) {
     margin-bottom: 2em;
+
+    @include respond(tab-land) {
+      margin-bottom: 4em;
+    }
   }
 }

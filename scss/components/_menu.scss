@@ -1,0 +1,145 @@
+.hamburger {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+  background: none;
+  outline: none;
+  border: none;
+  @include respond(tab-port) {
+    z-index: 600;
+    width: 4rem;
+  }
+  @include respond(desktop) {
+    display: none;
+  }
+
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: $white;
+  margin: 4px 0;
+  transition: 0.4s;
+
+  @include respond(tab-port) {
+    margin: 6px 0;
+  }
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-2px, 1px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-11px, -11px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 9rem;
+  width: 90%;
+  min-height: 80vh;
+
+  left: 100%;
+  display: block;
+  z-index: 100;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .4s;
+
+  @include respond(tab-port) {
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  @include respond(tab-land) {
+    min-height: 100vh;
+  }
+
+  &__links-wrapper {
+    width: 90%;
+    margin: 4rem auto 3rem auto;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__links-list {
+    &--main {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--sub {
+      width: 90%; 
+      margin: 1.5rem auto;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-radius: 5px;
+      background-color: rgb(226, 226, 226);
+      transition: all .4s;
+      height: 100%;
+      opacity: 1;
+
+    }
+  }
+
+  &__links {
+    &--main {
+      position: relative;
+    }
+
+    &--sub {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  
+  &__btn-wrapper {
+    width: 60%;
+    margin: 3rem auto 2rem auto;
+    
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+
+.menu.is-active {
+  transform: translateX(-50%);
+  left: 50%;
+
+  @include respond(tab-port) {
+    & + button::after, 
+    & + button::before {
+      background-color: $light-red--3;
+  }
+  }
+  
+
+  @include respond(tab-port) {
+    padding-top: 12rem;
+  }
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(212, 211, 211);
+  border: none; 
+  height: 1px;
+}

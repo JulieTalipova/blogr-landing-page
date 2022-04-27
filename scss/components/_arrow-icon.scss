@@ -1,0 +1,104 @@
+.toggle {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  opacity: 0; 
+
+  &:checked ~ ul {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &--white {
+    width: 25%;
+    height: 25%;
+    top: .6rem;
+  }
+  &--coral {
+    left: 55%;
+  }
+}
+  
+
+.arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: relative;
+  margin: 0 1rem;
+
+  &--white {
+    margin: 0 .5rem;  
+
+    @include respond(desktop) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    // top: 3rem;
+  }
+
+  &--coral {
+    @include respond(tab-port) {
+      width: 2rem;
+      height: 2rem;
+      top: .5rem;
+    }
+  }
+
+  
+
+  &-span {
+    position: absolute;
+    width: .75rem;
+    height: .2rem;
+    display: inline-block;
+    transition: all .2s ease;
+
+
+    &--coral {
+      background-color: $light-red--1;
+      top: .5rem;
+
+      @include respond(tab-port) {
+        width: 1.3rem;
+      }
+    }
+
+    &--white {
+      background-color: $white;
+      top: .8rem;
+
+      @include respond(desktop) {
+        width: 1rem;
+      }
+    }
+
+    &:first-of-type {
+      left: 0;
+      transform: rotate(-45deg);
+    }
+
+    &:last-of-type {
+      right: 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.toggle {
+  &:checked + span > span {
+    &:first-of-type {
+      left: 0;
+      transform: rotate(45deg);
+    }
+  
+    &:last-of-type {
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+

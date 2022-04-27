@@ -1,3 +1,8 @@
 .intro {
   min-height: 100vh;
+
+  @include respond(tab-land) {
+    min-height: 0;
+    margin-bottom: 8em;
+  }
 }

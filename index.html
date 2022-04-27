@@ -24,36 +24,128 @@
           <div class="header__logo-wrapper">
             <img src="images/logo.svg" alt="Logo of the website" class="img header__logo-img">
           </div>
-          <!-- <div class="header-wrapper">
-            <nav>
-              <select name="" id="">
-                <options>Overview</options>
-                <options>Pricing</options>
-                <options>Marketplace</options>
-                <options>Features</options>
-                <options>Integrations</options>
-              </select>
-              <select name="" id="">
-                <option value="">About</option>
-                <option value="">Team</option>
-                <option value="">Blog</option>
-                <option value="">Careers</option>
-              </select>
-              <select name="" id="">
-                <option value="">Contact</option>
-                <option value="">Newsletter</option>
-                <option value="">LinkedIn</option>
-              </select>
+
+          <div class="header__nav-wrapper">
+            <nav class="header__nav">
+
+              <ul class="header__nav-list flex">
+                <li class="header__links-list--main">
+                  <a href="#" class="header__links--main" onclick="check1()">Product</a>
+                  <input class="toggle toggle--white" id="toggle--1" type="checkbox" checked>
+                  <span class="arrow arrow--white">
+                    <span class="arrow-span arrow-span--white"></span>
+                    <span class="arrow-span arrow-span--white"></span>
+                  </span>
+                  <ul class="header__links-list--sub">
+                    <li class="header__links--sub"><a href="#">Overview</a></li>
+                    <li class="header__links--sub"><a href="#">Marketplace</a></li>
+                    <li class="header__links--sub"><a href="#">Features</a></li>
+                    <li class="header__links--sub"><a href="#">Integrations</a></li>
+                  </ul>
+                </li>
+
+                <li class="header__links-list--main">
+                  <a href="#" class="header__links--main" onclick="check2()">Company</a>
+                  <input class="toggle toggle--white" id="toggle--2" type="checkbox" checked>
+                  <span class="arrow arrow--white">
+                    <span class="arrow-span arrow-span--white"></span>
+                    <span class="arrow-span arrow-span--white"></span>
+                  </span>
+                  <ul class="header__links-list--sub">
+                    <li class="header__links--sub"><a href="#">About</a></li>
+                    <li class="header__links--sub"><a href="#">Team</a></li>
+                    <li class="header__links--sub"><a href="#">Blog</a></li>
+                    <li class="header__links--sub"><a href="#">Careers</a></li>
+                  </ul>
+                </li>
+
+                <li class="header__links-list--main">
+                  <a href="#" class="header__links--main" onclick="check3()">Connect</a>
+                  <input class="toggle toggle--white" id="toggle--3" type="checkbox" checked>
+                  <span class="arrow arrow--white">
+                    <span class="arrow-span arrow-span--white"></span>
+                    <span class="arrow-span arrow-span--white"></span>
+                  </span>
+                  <ul class="header__links-list--sub">
+                    <li class="header__links--sub"><a href="#">Contact</a></li>
+                    <li class="header__links--sub"><a href="#">Newsletter</a></li>
+                    <li class="header__links--sub"><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+              </ul>
             </nav>
-            <div class="header-btn-wrapper">
-              <a href="#" class="btn btn-simple">Login</a>
-              <a href="#" class="btn btn-round--transparent btn-round--white">Sign up</a>
+
+            <div class="header__btn-wrapper flex">
+              <a href="#" class="btn btn-simple btn-simple--white">Login</a>
+              <a href="#" class="btn btn-round btn-round--white">Sign up</a>
             </div>
-          </div> -->
-          <div class="hamburger-icon-wrapper">
-              <img src="images/icon-hamburger.svg" alt="hamburger icon" class="hamburger-icon">
+          </div> 
+
+          <div class="menu">
+        
+            <ul class="menu__links-wrapper flex">
+              <li class="menu__links-list--main">
+                <a href="#" class="menu__links--main">Product</a>
+                <input class="toggle toggle--coral" type="checkbox" checked>
+                <span class="arrow arrow--coral">
+                  <span class="arrow-span arrow-span--coral"></span>
+                  <span class="arrow-span arrow-span--coral"></span>
+                </span>
+                <ul class="menu__links-list--sub">
+                  <li class="menu__links--sub"><a href="#">Overview</a></li>
+                  <li class="menu__links--sub"><a href="#">Pricing</a></li>
+                  <li class="menu__links--sub"><a href="#">Marketplace</a></li>
+                  <li class="menu__links--sub"><a href="#">Features</a></li>
+                  <li class="menu__links--sub"><a href="#">Integrations</a></li>
+                </ul>
+              </li>
+
+              <li class="menu__links-list--main">
+                <a href="#" class="menu__links--main">Company</a>
+                <input class="toggle toggle--coral" type="checkbox" checked>
+                <span class="arrow arrow--coral">
+                  <span class="arrow-span arrow-span--coral"></span>
+                  <span class="arrow-span arrow-span--coral"></span>
+                </span>
+                <ul class="menu__links-list--sub">
+                  <li class="menu__links--sub"><a href="#">About</a></li>
+                  <li class="menu__links--sub"><a href="#">Team</a></li>
+                  <li class="menu__links--sub"><a href="#">Blog</a></li>
+                  <li class="menu__links--sub"><a href="#">Careers</a></li>
+                </ul>
+              </li>
+
+              <li class="menu__links-list--main">
+                <a href="#" class="menu__links--main">Company</a>
+                <input class="toggle toggle--coral" type="checkbox" checked>
+                <span class="arrow arrow--coral">
+                  <span class="arrow-span arrow-span--coral"></span>
+                  <span class="arrow-span arrow-span--coral"></span>
+                </span>
+                <ul class="menu__links-list--sub">
+                  <li class="menu__links--sub"><a href="#">Contact</a></li>
+                  <li class="menu__links--sub"><a href="#">Newsletter</a></li>
+                  <li class="menu__links--sub"><a href="#">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+    
+            <hr>
+           
+            <div class="menu__btn-wrapper flex">
+              <a href="#" class="btn btn-simple btn-simple--gray">Login</a>
+              <a href="#" class="btn btn-round btn-round--gradient">Sign up</a>
+            </div>
+
           </div>
+
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+ 
        </header>
+       
+       
         
        <div class="intro__heading-primary-wrapper">
         <h1 class="intro__heading-primary--main">A modern publishing platform</h1>
@@ -91,8 +183,12 @@
             by adding customized categories, sections, format, or flow. With this functionality, you're in full control.
           </p>
         </div>
-        <div class="box__img-wrapper">
-          <img src="images/illustration-editor-mobile.svg" alt="illustration of an editor" class="img">
+        <div class="box__img-wrapper box__img-wrapper--1">
+          <picture>
+            <source srcset="images/illustration-editor-mobile.svg" media="(max-width: 900px)">
+            <source srcset="images/illustration-editor-desktop.svg" media="(max-width: 2000px)">
+            <img src="images/illustration-editor-mobile.svg" alt="illustration of an editor" class="img">
+          </picture>
         </div>
       </div>
       
@@ -132,55 +228,55 @@
             capable of producing even the most complicated sites.
           </p>
         </div>
-        <div class="box__img-wrapper">
-          <img src="images/illustration-laptop-mobile.svg" alt="illustration of an editor" class="img">
+        <div class="box__img-wrapper box__img-wrapper--2">
+          <picture>
+            <source srcset="images/illustration-laptop-mobile.svg" media="(max-width: 900px)">
+            <source srcset="images/illustration-laptop-desktop.svg" media="(max-width: 2000px)">
+            <img src="images/illustration-laptop-mobile.svg" alt="illustration of a laptop" class="img">
+          </picture>
         </div>
       </div>
       
   </main>
 
 
-  <footer class="footer flex">
-    <div class="footer__logo-wrapper">
-      <img src="images/logo.svg" alt="Logo of the website" class="img footer__logo-img">
-    </div>   
-
-    <div class="footer__links-wrapper flex">
-      <div class="footer__links-container footer__links-container--1">
-        <p class="footer__links-name">Product</p>
-        <ul class="footer__links-list">
-          <li><a href="#" class="footer__link">Overview</a></li>
-          <li><a href="#" class="footer__link">Pricing</a></li>
-          <li><a href="#" class="footer__link">Marketplace</a></li>
-          <li><a href="#" class="footer__link">Features</a></li>
-          <li><a href="#" class="footer__link">Integrations</a></li>
-        </ul>
+  <footer class="footer">
+    <div class="footer__content-wrapper flex">
+      <div class="footer__logo-wrapper">
+        <img src="images/logo.svg" alt="Logo of the website" class="img footer__logo-img">
       </div>
-
-      <div class="footer__links-container footer__links-container--2">
-        <p class="footer__links-name">Company</p>
-        <ul class="footer__links-list">
-          <li><a href="#" class="footer__link">About</a></li>
-          <li><a href="#" class="footer__link">Team</a></li>
-          <li><a href="#" class="footer__link">Blog</a></li>
-          <li><a href="#" class="footer__link">Careers</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__links-container footer__links-container--3">
-        <p class="footer__links-name">Connect</p>
-        <ul class="footer__links-list">
-          <li><a href="#" class="footer__link">Contact</a></li>
-          <li><a href="#" class="footer__link">Newsletter</a></li>
-          <li><a href="#" class="footer__link">LinkedIn</a></li>
-        </ul>
+      <div class="footer__links-wrapper flex">
+        <div class="footer__links-container footer__links-container--1">
+          <p class="footer__links-name">Product</p>
+          <ul class="footer__links-list">
+            <li><a href="#" class="footer__link">Overview</a></li>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Marketplace</a></li>
+            <li><a href="#" class="footer__link">Features</a></li>
+            <li><a href="#" class="footer__link">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-container footer__links-container--2">
+          <p class="footer__links-name">Company</p>
+          <ul class="footer__links-list">
+            <li><a href="#" class="footer__link">About</a></li>
+            <li><a href="#" class="footer__link">Team</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-container footer__links-container--3">
+          <p class="footer__links-name">Connect</p>
+          <ul class="footer__links-list">
+            <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Newsletter</a></li>
+            <li><a href="#" class="footer__link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <script src="script.js"></script>
 </body>
 </html>

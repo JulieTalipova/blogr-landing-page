@@ -1,30 +1,74 @@
 .btn {
   display: inline-block;
-  &-text {
-    // color: transparent;
-    // color: white;
-    // mix-blend-mode: difference;
-    // opacity: 0;
-  }
-  // z-index: 3;
+  transition: all .5s;
+
   &-round {
     font-size: 1.5rem;
     border: 1.5px solid white;
     padding-top: .8em;
     padding-bottom: .8em;
-    width: 13rem;
+    width: 11.5rem;
     text-align: center;
     border-radius: 30px;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
 
+    @include respond(tab-port) {
+      font-size: 1.7rem;
+      width: 13rem;
+    }
+
     &--white {
       background-color: white;
+      color: rgba(215, 39, 12, 0.5);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.171);
+        color: white;
+        border: 1.5px solid rgba(255, 255, 255, 0.171);
+      }
     }
 
     &--transparent {
       background-color: transparent;
       color: $white;
+
+      &:hover {
+        background-color: white;
+        color:rgba(215, 39, 12, 0.5);
+      }
     }
+
+    &--gradient {
+      color: $white;
+      background: linear-gradient(to right, $light-red--3 8%, $light-red--4);
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-simple {
+    font-size: 1.9rem;
+
+    &--white {
+      color: $white;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+        font-weight: 700;
+      }
+    }
+    &--gray {
+      font-family: 'Overpass', sans-serif !important;
+      font-weight: 600;
+      color: $grayish-blue--dark;
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
+    }    
   }
 }

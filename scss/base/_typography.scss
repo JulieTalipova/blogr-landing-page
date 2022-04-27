@@ -1,21 +1,50 @@
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .intro {
   color: $white;
 
   &__heading-primary {
     &--main {
-      font-size: 8vw;
+      font-size: clamp(1rem, 8vw, 5.8rem);
       font-weight: 600;
     }
 
     &--sub {
       font-size: $default-font-size;
       font-weight: 300;
+
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.header {
+  &__links {
+    
+    &--main {
+      font-size: 1.8rem;
+      color: $white;
+      // margin-right: 4rem;
+    }
+    
+
+    &--sub > a {
+      font-size: $default-font-size;
+      color: $grayish-blue--dark;
     }
   }
 }
 
 .heading-secondary {
-  font-size: 7vw;
+  font-size: clamp(1rem, 7vw, 3.8em);
+
+  @include respond(desktop) {
+    font-size: clamp(1rem, 8vw, 5rem);  
+  }
   color: $blue--dark;
 }
 
@@ -23,6 +52,10 @@
   &__text {
     font-size: $default-font-size;
     line-height: 1.6em;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
 
     &--gray {
       color: $grayish-blue--dark;
@@ -37,10 +70,18 @@
     &--light {
       font-size: 2.9rem;
       color: $white;
+
+      @include respond(tab-land) {
+        font-size: 3.8rem;
+      }
     }
     &--dark {
       font-size: 2.2rem;
       color: $blue--dark;
+
+      @include respond(tab-land) {
+        font-size: 2.7rem;
+      }
     }
   }
 }
@@ -57,5 +98,31 @@
     color: $grayish-blue;
     font-size: $default-font-size;
     font-weight: 400;
+  }
+}
+
+.menu {
+
+  &__links {
+    &--main {
+      font-size: $default-font-size;
+      font-family: 'Overpass', sans-serif !important;
+      font-weight: 600;
+      color:  $grayish-blue--dark;
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
+    }
+    &--sub > a {
+      font-size: $default-font-size;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 600;
+      color:  $grayish-blue--dark;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+    }
   }
 }
