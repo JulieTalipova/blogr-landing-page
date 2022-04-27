@@ -379,13 +379,13 @@ a {
       margin: 6px 0; } }
 
 .hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-0.2rem, 0.2rem); }
+  transform: rotate(-45deg) translate(-0.1rem, 0.2rem); }
   @media only screen and (min-width: 37.5em) {
     .hamburger.is-active::before {
       transform: rotate(-45deg) translate(-0.2rem, 0.2rem); } }
 
 .hamburger.is-active::after {
-  transform: rotate(45deg) translate(-0.8rem, -0.1rem); }
+  transform: rotate(45deg) translate(-0.8rem, -0.9rem); }
   @media only screen and (min-width: 37.5em) {
     .hamburger.is-active::after {
       transform: rotate(45deg) translate(-1.3rem, -1.4rem); } }
