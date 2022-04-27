@@ -67,6 +67,7 @@
     top: 0;
     width: 100%;
     min-height: 100vh;
+    padding-top: 12rem;
   }
 
   @include respond(tab-land) {
@@ -139,10 +140,6 @@
   }
   }
   
-
-  @include respond(tab-port) {
-    padding-top: 12rem;
-  }
 }
 
 hr {

@@ -409,7 +409,8 @@ a {
     .menu {
       top: 0;
       width: 100%;
-      min-height: 100vh; } }
+      min-height: 100vh;
+      padding-top: 12rem; } }
   @media only screen and (min-width: 56.25em) {
     .menu {
       min-height: 100vh; } }
@@ -452,9 +453,6 @@ a {
     .menu.is-active + button::after,
     .menu.is-active + button::before {
       background-color: #ff8f70; } }
-  @media only screen and (min-width: 37.5em) {
-    .menu.is-active {
-      padding-top: 12rem; } }
 
 hr {
   width: 80%;
@@ -535,7 +533,7 @@ hr {
   transform: translate(-50%, -50%); }
 
 .intro__btn-wrapper {
-  width: 70%;
+  width: 76%;
   max-width: 280px;
   position: absolute;
   top: 78%;
@@ -544,7 +542,7 @@ hr {
   justify-content: space-between; }
   @media only screen and (min-width: 37.5em) {
     .intro__btn-wrapper {
-      max-width: 220px; } }
+      max-width: 29rem; } }
   @media only screen and (min-width: 112.5em) {
     .intro__btn-wrapper {
       max-width: 350px; } }
