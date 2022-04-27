@@ -33,7 +33,7 @@
   transform: rotate(-45deg) translate(-.1rem, .15rem);
   
   @include respond(tab-port) {
-  transform: rotate(-45deg) translate(-.2rem, .2rem);
+  transform: rotate(-45deg) translate(-.2rem, .3rem);
   }
 }
 
@@ -41,7 +41,7 @@
   transform: rotate(45deg) translate(-.8rem, -.9rem);
 
   @include respond(tab-port) {
-  transform: rotate(45deg) translate(-1.3rem, -1.4rem);
+  transform: rotate(45deg) translate(-1.25rem, -1.4rem);
   }
 }
 
