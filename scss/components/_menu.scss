@@ -30,7 +30,7 @@
 }
 
 .hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-.1rem, .2rem);
+  transform: rotate(-45deg) translate(-.1rem, .15rem);
   
   @include respond(tab-port) {
   transform: rotate(-45deg) translate(-.2rem, .2rem);
