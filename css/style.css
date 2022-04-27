@@ -159,7 +159,9 @@ a {
     height: 25%;
     top: .6rem; }
   .toggle--coral {
-    left: 55%; }
+    width: 10%;
+    height: 100%;
+    top: 0rem; }
 
 .arrow {
   width: 1.25rem;
