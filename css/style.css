@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   @media only screen and (min-width: 56.25em) {
     html {
       font-size: 56.25%; } }
@@ -378,10 +379,16 @@ a {
       margin: 6px 0; } }
 
 .hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-2px, 1px); }
+  transform: rotate(-45deg) translate(-0.2rem, 0.2rem); }
+  @media only screen and (min-width: 37.5em) {
+    .hamburger.is-active::before {
+      transform: rotate(-45deg) translate(-0.2rem, 0.2rem); } }
 
 .hamburger.is-active::after {
-  transform: rotate(45deg) translate(-11px, -11px); }
+  transform: rotate(45deg) translate(-0.8rem, -0.1rem); }
+  @media only screen and (min-width: 37.5em) {
+    .hamburger.is-active::after {
+      transform: rotate(45deg) translate(-1.3rem, -1.4rem); } }
 
 .hamburger.is-active .bar {
   opacity: 0; }
@@ -439,7 +446,8 @@ a {
 
 .menu.is-active {
   transform: translateX(-50%);
-  left: 50%; }
+  left: 50%;
+  visibility: visible; }
   @media only screen and (min-width: 37.5em) {
     .menu.is-active + button::after,
     .menu.is-active + button::before {

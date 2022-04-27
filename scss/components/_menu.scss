@@ -30,11 +30,19 @@
 }
 
 .hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-2px, 1px);
+  transform: rotate(-45deg) translate(-.2rem, .2rem);
+  
+  @include respond(tab-port) {
+  transform: rotate(-45deg) translate(-.2rem, .2rem);
+  }
 }
 
 .hamburger.is-active::after {
-  transform: rotate(45deg) translate(-11px, -11px);
+  transform: rotate(45deg) translate(-.8rem, -.1rem);
+
+  @include respond(tab-port) {
+  transform: rotate(45deg) translate(-1.3rem, -1.4rem);
+  }
 }
 
 .hamburger.is-active .bar {
@@ -122,6 +130,7 @@
 .menu.is-active {
   transform: translateX(-50%);
   left: 50%;
+  visibility: visible;
 
   @include respond(tab-port) {
     & + button::after, 
