@@ -26,6 +26,7 @@
 
   @include respond(tab-port) {
     margin: 6px 0;
+    height: 4px;
   }
 }
 
@@ -33,7 +34,7 @@
   transform: rotate(-45deg) translate(-.1rem, .15rem);
   
   @include respond(tab-port) {
-  transform: rotate(-45deg) translate(-.13rem, .3rem);
+  transform: rotate(-45deg) translate(-.48rem, .5rem);
   }
 }
 
